@@ -1,0 +1,19 @@
+version: '3.4'
+
+services: 
+  postgres: 
+    container_name: instagram-db
+    image: postgres
+    ports:
+      - 5432:5432
+    volumes: 
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: instagram 
+      POSTGRES_PASSWORD: instagram 
+
+volumes:
+  postgres_data:
+  
+
