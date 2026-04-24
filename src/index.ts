@@ -38,10 +38,10 @@ const allServer = async () => {
     );
 
     app.get('/', (req, res) => {
-        res.json({ msg: "Server is start111111" });
+        res.json({ msg: "Server is docker" });
     });
 
-    app.listen(PORT, () => console.log("server is start now1"))
+    app.listen(PORT, () => console.log("server is start now"))
 }
 
 allServer()
